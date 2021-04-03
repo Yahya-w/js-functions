@@ -11,6 +11,6 @@
             }
             return param
         } else {
-            console.error(param.toString(), "is not an Array !")
+            throw TypeError(param.toString() + " is not an Array !")
         }
     }
