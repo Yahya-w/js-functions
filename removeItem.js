@@ -1,7 +1,10 @@
     Array.prototype.removeItem = function(param) {
         let _arr = this;
         for (let i = 0; i <= _arr.length; i++) {
-            if (_arr[i] === param) _arr.splice(i, 1)
+            if (_arr[i] === param) {
+                _arr.splice(i, 1)
+                break;
+            }
         }
         return _arr
     }
