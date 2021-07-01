@@ -1,14 +1,11 @@
-    Array.prototype.removeItem = function(param) {
-        let _arr = this;
-        for (let i = 0; i <= _arr.length; i++) {
-            if (_arr[i] === param) {
-                _arr.splice(i, 1)
-                break;
-            }
+    Array.prototype.removeItem = function(item) {
+    
+        if (this.indexOf(item) !== -1) {
+            this.splice(this.indexOf(item), 1)
+            return this;
+        } else {
+            throw ReferenceError(`No value matching ${item} was found `);
         }
-        return _arr
+    
     }
 
-    var testArr = [12, 56, "Yahya"]
-    testArr.removeItem(56)
-    console.log(testArr) // output : [12,"Yahya"]
