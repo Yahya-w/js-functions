@@ -8,4 +8,7 @@
         }
     
     }
-
+    
+    let arr = [3, 4, 5, 2]
+    arr.removeItem(2) // Output : [3, 4, 5] 
+    arr.removeItem(0) // Output : Reference Error '0'
