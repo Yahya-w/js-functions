@@ -1,6 +1,6 @@
     Array.prototype.removeItem = function(item) {
     
-        if (this.indexOf(item) !== -1) {
+        if (this.includes(item)) {
             this.splice(this.indexOf(item), 1)
             return this;
         } else {
